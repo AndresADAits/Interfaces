@@ -1,44 +1,76 @@
-h1 {
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+/*
+*@media screen and (max-width: 800px) {
+    * {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+   
 }
-h3{
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
+*/
+/*
+* 1.- A EL TEMA DE MEDIA QUERY HAY QUE DARLE MÁS SENTIDO
+*/
 
-.insertar {
-    background-color: aquamarine;
-    border-color: rgb(22, 3, 16);
-    border-style:double;
-    padding-left: 1%;
-    
-}
+/*@import "compass/css3";*/
 
-.mostrar{
-    background-color: aquamarine;
-     border-color:  rgb(22, 3, 16);
-    border-style:double;
-}
-.actualizar{
-    background-color: aquamarine;
-     border-color:  rgb(22, 3, 16);
-    border-style:double;
-    padding-left: 1%;
-}
-div{
-    margin-bottom: 1%;
-}
-table{
-    padding:1%;
-}
-
-p{
-    font-family: fantasy;
-}
-body{
-    background-color: cadetblue;
-}
-.{
-
-}
+.navigation {
+    list-style: none;
+    margin: 0;
+    background: deepskyblue;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /*USANDO FLEXBLOX*/
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+  }
+  
+  .navigation a:hover {
+    background: #00b7f5;
+  }
+  /*USANDO MEDIA QUERY*/
+  @media all and (max-width: 800px) {
+    * {
+        flex: 50%;
+        max-width: 50%;
+      }
+    .navigation {
+      justify-content: space-around;
+    }
+  }
+  /*USANDO MEDIA QUERY*/
+  @media all and (max-width: 600px) {
+    *{
+        /*PROBLEMA ENTRE 600 Y 800*/
+        flex: 100%;
+        max-width: 100%;
+      }
+    .navigation {
+        /*USANDO FLEXBLOX*/
+      -webkit-flex-flow: column wrap;
+      flex-flow: column wrap;
+      padding: 0;
+    }
+  
+    .navigation a {
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  
+    .navigation li:last-of-type a {
+      border-bottom: none;
+    }
+  }
