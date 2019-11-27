@@ -18,11 +18,8 @@ El texto debe tener el estilo de  columnas múltiples, aunque sea solo una colum
 En 2 páginas al menos deben incluirse transformaciones en 2D diferentes.(0.2 puntos)
 En 2 páginas al menos deben incluirse transformaciones en 3D diferentes.(0.3 puntos)
 En 2 páginas al menos deben incluirse animaciones diferentes.(0.2 puntos)
-* 1.-**Todas las páginas deben tener sus estilos especificados con media queries.(Obligatorio) (0.6 puntos)**
-**Utilizar el Viewport.(Obligatorio)**
+
 **Usar Grid Layout para posicionar los elementos más importantes de nuestro diseño de maquetación.(Obligatorio)**
-**Usar elementos flexbox para posicionar los elementos del contenido.(Obligatorio)**
-La página web debe ser responsive y adaptarse correctamente al menos a la pantalla de un portátil y un móvil.(0.6 puntos)
 **EL proyecto debe pasar las siguientes validaciones(Obligatorio)(1 punto):**
 **Pasar la validación de HTML**
 **Pasar la validación CSS**
