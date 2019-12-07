@@ -44,6 +44,34 @@
 	body {
 		-webkit-text-size-adjust: none;
 	}
+/*GRID*/
+	#thumbnails{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows:  auto;
+		grid-template-areas: "box box box" "box box box";
+	  }
+	  #FormRegistroGrid{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows:  auto;
+		grid-template-areas: "box box box" "box box box";
+		background-color: #ca93e4;
+	  }
+	  #FormSorteoGrid{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows:  auto;
+		grid-template-areas: "box box box" "box box box";
+		background-color: #ca93e4;
+	  }
+	  /*
+	  *HAY QUE PONER ID A LO QUE QUIERES CAMBIAR EL FONDO PARA QUE SE VEAN
+	  */
+	  #cumple{background-color: aquamarine;
+
+
+	  }
 
 /* Box Model */
 
@@ -168,7 +196,7 @@
 			.navigation {
 			  justify-content: space-around;
 			}
-		  }
+		  
 		  
 		
 			.navigation {
@@ -184,11 +212,11 @@
 			  border-top: 1px solid rgba(255, 255, 255, 0.3);
 			  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 			}
-		  
+		
 			.navigation li:last-of-type a {
 			  border-bottom: none;
 			}
-		  }
+		  
 
 /*	a {
 		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
