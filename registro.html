@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	
+
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -11,98 +11,115 @@
 
 
 <body id="top">
+	<!--Contiene etiqueta SECTION -->
 
 	<section id="banner" data-video="images/banner">
 		<div class="inner">
+			<!--Contiene etiqueta HEADER -->
 			<header>
 				<h1>Trendy</h1>
-				<p>Sorteos</p>
-				<a href="#main" class="more"><!--aunque esta vacio se usa para bajar al "main" y que tenga apariencia y un efecto --></a>
+				<p translate="yes">Registro</p><!--Para que se pueda saber en que parte de la web estamos-->
+				<a href="#main" class="more">
+					<!--aunque esta vacio se usa para bajar al "main" y que tenga apariencia y un efecto --></a>
 			</header>
-		
+
 		</div>
 	</section>
 
 
 	<div id="main">
 		<div class="inner">
-				<nav>
+			<!--Contiene etiqueta NAV -->
+			<nav>
 
-						<div class="nav">
-							<ul class="navigation">
-								<li><a href="index.html">Tendencias</a> </li>
-								<li><a href="registro.html">Registro</a> </li>
-								<li> <a href="sorteo.html">Sorteos</a> </li>
-							</ul>
-						</div>
-				</nav>
+				<div class="nav">
+					<ul class="navigation">
+						<li><a href="index.html">Tendencias</a> </li>
+						<li><a href="registro.html">Registro</a> </li>
+						<li> <a href="sorteo.html">Sorteos</a> </li>
+					</ul>
+				</div>
+			</nav>
 
-			
 
-				<div class="FormRegistroGrid" ><form action="support@trendy.com" method="post">
+
+			<div class="FormRegistroGrid">
+				<form action="support@trendy.com" method="post" autocomplete="on">
 					<div>
 						<h2>Datos del usuario</h2>
 					</div>
 					<div>
-						Nombre<input type="text" name="nombre" size="10" background-color="#a1a1a1" value="tu nombre">
-		
-						<div></div>
-						Apellidos<input type="text" name="apellido" size="20" background-color="#a1a1a1" value="tus apellidos">
-		
+						<label for="Nombre">Nombre<input type="text" name="nombre" size="10" background-color="#a1a1a1" value="nombre" autofocus></label> <!-- Uso el autofocus para que sepa que hay que tiene que teclear y que comience por el primer lugar-->
+						
+					</div>
+						<div>
+							<label for="Apellidos">Apellidos<input type="text" name="apellido" size="20" background-color="#a1a1a1"
+								value="tus apellidos"></label>
+						
+						</div>
+					
+					<div>
+						<label for="Fecha de nacimiento">Fecha de nacimiento<input type="date" id="cumple" name="cumple required" max="2025-01-01"
+							min="1900-01-01"></label>
+						
+
 					</div>
 					<div>
-						Fecha de nacimiento<input type="date" id= "cumple" name="cumple required" max="2025-01-01" min="1900-01-01">
-		
+						<label for="Correo Electronico">Correo Electronico<input type="text" name="Correo" size="20" value=""autocomplete="off"></label> <!-- Aqui impido el autocompletado para que no se use el correo de otra persona-->
+						
 					</div>
 					<div>
-						Correo Electronico<input type="text" name="Correo" size="20" value="tucorreo@.com">
-					</div>
-					<div>
+						
 						<h4>Elige una red social</h4>
-		
-						<select name="redSocial" form="redSocial">
-							<option value="void"></option>
-							<option value="Twitter">Twitter</option>
-							<option value="Facebook">Facebook</option>
-							<option value="Instagram">Instagram</option>
+						<label for="red social">
+						<select  name="redSocial" form="redSocial">
+							<option id="twitterNegro" value="Twitter"select>Twitter</option>
+							<option id="facebookNegro"value="Facebook">Facebook</option>
+							<option id="instaNegro"value="Instagram">Instagram</option>
 						</select>
+					</label>
 					</div>
-					<h4>Acepta la politica de datos?</h4>
-					<INPUT type="checkbox" name="aceptaPolitica" value="1">he leido, y acepto la politica de datos.
-		
-		
-		
-					<input type="submit" value="Enviar">
-					</form>
+					<div>
+						<label for="Numero">Introduce tu número de telefono:<input type="number" id="teleph" value="telefono"></label>
+					</div>
+					
+					
+					<label for="politica de datos"><input class="checkboxMalcolor" id ="checkboxMalcolor" type="checkbox" name="aceptaPolitica" value="1">¿Acepta la politica de datos?</label>
+					
+
+
+<label for="Enviar"><input type="submit" value="Enviar"></label>
+					
+				</form>
+			</div>
+
+<!--Contiene etiqueta FOOTER -->
+			<footer id="footer">
+				<div class="inner">
+
+					<ul class="icons">
+						<li><a href="https://twitter.com/" target="_blank" class="icon fa-twitter"><span
+									class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/" target="_blank" class="icon fa-facebook"><span
+									class="label">Facebook</span></a>
+						</li>
+						<li><a href="https://www.instagram.com/" target="_blank" class="icon fa-instagram"><span
+									class="label">Instagram</span></a></li>
+						<li><a href="mailto:joanferfra@gmail.com" target="_blank" class="icon fa-envelope"><span
+									class="label">Email</span></a>
+						</li>
+					</ul>
+					<p class="copyright">&copy; Trendy.inc Fake Road 123</p>
 				</div>
+			</footer>
 
 
-	<footer id="footer">
-		<div class="inner">
-
-			<ul class="icons">
-				<li><a href="https://twitter.com/" target="_blank" class="icon fa-twitter"><span
-							class="label">Twitter</span></a></li>
-				<li><a href="https://www.facebook.com/" target="_blank" class="icon fa-facebook"><span
-							class="label">Facebook</span></a>
-				</li>
-				<li><a href="https://www.instagram.com/" target="_blank" class="icon fa-instagram"><span
-							class="label">Instagram</span></a></li>
-				<li><a href="mailto:joanferfra@gmail.com" target="_blank" class="icon fa-envelope"><span
-							class="label">Email</span></a>
-				</li>
-			</ul>
-			<p class="copyright">&copy; Trendy.inc Fake Road 123</p>
-		</div>
-	</footer>
-
-
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.poptrox.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
 </body>
 

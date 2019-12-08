@@ -1,6 +1,7 @@
 
 Cada web debe tener al menos 3 páginas con una funcionalidad distinta y que se entienda perfectamente como funciona. (Obligatorio) (0.5 puntos cada página con estilo basado en el documento especificado en la parte 1)
-Todas las páginas deben incluir cada una de las etiquetas semánticas: *header, nav, section, aside y footer*. La etiqueta *aside* sólo debe usarse si se definió en el documento del primer hito de trabajo. (Obligatorio)
+Todas las páginas deben incluir cada una de las etiquetas semánticas: *header, nav, section, aside y footer*. La etiqueta *aside* 
+sólo debe usarse si se definió en el documento del primer hito de trabajo. (Obligatorio)
 Aunque no se incluya en todas las páginas deben incluirse en alguna de ellas las demás etiquetas semánticas. (Obligatorio) (0.1 punto)
 Usar la propiedad translate en cada una de las páginas, con un comentario de porque se ha incluido dicha propiedad en ese caso. (0.1 punto)
 Al menos 2 de las páginas deben tener un formulario.(0.5 puntos). Con los siguientes requisitos:

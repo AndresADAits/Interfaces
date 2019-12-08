@@ -3,8 +3,31 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Passion+One:400");
 
 
-
-/* Reset */
+/* Para etiquetas semanticas*/
+aside { 
+	background-color: rgb(156, 156, 154);
+float: right; 
+width: 300px; 
+margin: 5px; 
+padding: 5px; 
+height:400px;
+	}
+	mark {background-color:aqua;}
+	figure {
+	position: sticky;
+	width:220px;
+	height:200px;
+	background-color: lightgray;
+	margin:5px;
+	padding:5px;
+	border:1px solid rgb(206, 98, 98);
+	}
+	figcaption {
+	position:bottom;
+	background-color:rgb(233, 123, 123);
+	color:white;
+	}
+	/* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
@@ -66,12 +89,22 @@
 		background-color: #ca93e4;
 	  }
 	  /*
-	  *HAY QUE PONER ID A LO QUE QUIERES CAMBIAR EL FONDO PARA QUE SE VEAN
+	  *Retoques formulario
 	  */
-	  #cumple{background-color: aquamarine;
+	  #cumple,#teleph{background-color: rgba(196, 204, 204, 0.452);
 
 
 	  }
+	  #selectLetra{color: #ffffff;
+
+	  }
+	  #twitterNegro{
+		  background-color: #42424f;
+		  
+	}
+	  #facebookNegro{ background-color: #42424f;}
+	  #instaNegro{ background-color: #42424f;}
+
 
 /* Box Model */
 
@@ -434,7 +467,8 @@
 	input[type="email"],
 	input[type="tel"],
 	select,
-	textarea {
+	textarea
+	 {
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
@@ -514,7 +548,7 @@
 		padding: 0.75em 1em;
 	}
 
-	input[type="checkbox"],
+	/*input[type="checkbox"],
 	input[type="radio"] {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -526,7 +560,7 @@
 		opacity: 0;
 		width: 1em;
 		z-index: -1;
-	}
+	}*/
 
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
