@@ -17,6 +17,10 @@ height:400px;
 	position: sticky;
 	width:220px;
 	height:200px;
+	/*Transformacion 2D con scale*/
+	-ms-transform: scale(1.2,1.2); /* IE 9 */
+    -webkit-transform: scale(1.2,1.2); /* Safari prior 9.0 */
+    transform: scale(1.2,1.2); /* Standard syntax */
 	background-color: lightgray;
 	margin:5px;
 	padding:5px;
@@ -26,6 +30,73 @@ height:400px;
 	position:bottom;
 	background-color:rgb(233, 123, 123);
 	color:white;
+	}
+
+	/*Para Transformaciones*/
+	/*Aqui se realiza una transormacion 2D con rotate al icono de facebook en la pagina "contacto" o nosotros.html*/
+	#rotateFace{
+		-ms-transform: rotate(180deg); /* IE 9 */
+		-webkit-transform: rotate(180deg); /* Safari prior 9.0 */
+		transform: rotate(180deg); /* Standard syntax */
+	}
+	/*Aqui se realiza una transormacion 3D con rotateY y rotateX al icono de twitter en la pagina "contacto" o nosotros.html*/
+	#rotate3d{
+		-webkit-transform: rotateY(150deg); /* Safari prior 9.0 */
+		-webkit-transform: rotateX(150deg); /* Safari prior 9.0 */
+  transform: rotateY(150deg); /* Standard syntax */
+  transform: rotateX(150deg); /* Standard syntax */
+	}
+	/*Animacion 3D flip-box*/
+	.flip-box {
+		background-color: transparent;
+		width: 300px;
+		height: 200px;
+	
+		perspective: 1000px;
+	  }
+	  
+	  .flip-box-inner {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-align: left;
+		transition: transform 0.8s;
+		transform-style: preserve-3d;
+	  }
+	  
+	  .flip-box:hover .flip-box-inner {
+		transform: rotateX(180deg);
+	  }
+	  
+	  .flip-box-front, .flip-box-back {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		backface-visibility: hidden;
+	  }
+	  
+	  .flip-box-front {
+		background-color:#42424f
+		color black;
+	  }
+	  
+	  .flip-box-back {
+		background-color: rgb(95, 16, 85);
+		color: white;
+		transform: rotateX(180deg);
+	  }
+/*Animacion al final de la pagina "nosotros.html"*/
+	  #quinto {
+		background-color: rgb(92, 92, 92);
+		animation: quintaA 5s 4;
+		text-align: center;
+	}
+
+	/*Animacion al final de la pagina "nosotros.html"*/
+	@keyframes quintaA {
+		50% {
+			margin: 20 Fpx;
+		}
 	}
 	/* Reset */
 
@@ -249,18 +320,6 @@ height:400px;
 			.navigation li:last-of-type a {
 			  border-bottom: none;
 			}
-		  
-
-/*	a {
-		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		color: rgba(255, 255, 255, 0.75);
-		text-decoration: none;
-		border-bottom: 1px dotted;
-		outline: 0;
-	}*/
 
 		a:hover {
 			color: #FFF;
@@ -548,19 +607,7 @@ height:400px;
 		padding: 0.75em 1em;
 	}
 
-	/*input[type="checkbox"],
-	input[type="radio"] {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		display: block;
-		float: left;
-		margin-right: -2em;
-		opacity: 0;
-		width: 1em;
-		z-index: -1;
-	}*/
+	
 
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
@@ -1071,115 +1118,7 @@ height:400px;
 		.button:active {
 			background-color: #af05da;
 		}
-/*
-		input[type="submit"].icon,
-		input[type="reset"].icon,
-		input[type="button"].icon,
-		button.icon,
-		.button.icon {
-			padding-left: 1.35em;
-		}
 
-			input[type="submit"].icon:before,
-			input[type="reset"].icon:before,
-			input[type="button"].icon:before,
-			button.icon:before,
-			.button.icon:before {
-				margin-right: 0.5em;
-			}
-
-		input[type="submit"].fit,
-		input[type="reset"].fit,
-		input[type="button"].fit,
-		button.fit,
-		.button.fit {
-			display: block;
-			margin: 0 0 1em 0;
-			width: 100%;
-		}
-
-		input[type="submit"].small,
-		input[type="reset"].small,
-		input[type="button"].small,
-		button.small,
-		.button.small {
-			font-size: 0.8em;
-		}
-
-		input[type="submit"].big,
-		input[type="reset"].big,
-		input[type="button"].big,
-		button.big,
-		.button.big {
-			font-size: 1.35em;
-		}
-
-		
-
-		input[type="submit"].disabled, input[type="submit"]:disabled,
-		input[type="reset"].disabled,
-		input[type="reset"]:disabled,
-		input[type="button"].disabled,
-		input[type="button"]:disabled,
-		button.disabled,
-		button:disabled,
-		.button.disabled,
-		.button:disabled {
-			background-color: rgba(255, 255, 255, 0.75) !important;
-			box-shadow: inset 0 -0.15em 0 0 rgba(0, 0, 0, 0.15);
-			color: #202024 !important;
-			cursor: default;
-			opacity: 0.25;
-		}
-
-		input[type="submit"].style2,
-		input[type="reset"].style2,
-		input[type="button"].style2,
-		button.style2,
-		.button.style2 {
-			background-color: #7f92cf;
-		}
-
-			input[type="submit"].style2:hover,
-			input[type="reset"].style2:hover,
-			input[type="button"].style2:hover,
-			button.style2:hover,
-			.button.style2:hover {
-				background-color: #92a2d6;
-			}
-
-			input[type="submit"].style2:active,
-			input[type="reset"].style2:active,
-			input[type="button"].style2:active,
-			button.style2:active,
-			.button.style2:active {
-				background-color: #6c82c8;
-			}
-
-		input[type="submit"].style3,
-		input[type="reset"].style3,
-		input[type="button"].style3,
-		button.style3,
-		.button.style3 {
-			background-color: #9d7ed0;
-		}
-
-			input[type="submit"].style3:hover,
-			input[type="reset"].style3:hover,
-			input[type="button"].style3:hover,
-			button.style3:hover,
-			.button.style3:hover {
-				background-color: #ab91d7;
-			}
-
-			input[type="submit"].style3:active,
-			input[type="reset"].style3:active,
-			input[type="button"].style3:active,
-			button.style3:active,
-			.button.style3:active {
-				background-color: #8f6bc9;
-			}
-*/
 		@media screen and (max-width: 480px) {
 
 			input[type="submit"],
@@ -1192,78 +1131,7 @@ height:400px;
 
 		}
 
-/* Poptrox */
-/*
-	.poptrox-popup {
-		-moz-box-sizing: content-box;
-		-webkit-box-sizing: content-box;
-		-ms-box-sizing: content-box;
-		box-sizing: content-box;
-		background: #000;
-		box-shadow: 0 0.5em 3em 0 rgba(0, 0, 0, 0.25);
-		border-radius: 4px;
-		padding: 2em;
-		overflow: hidden;
-	}
 
-		.poptrox-popup .closer {
-			-moz-transition: opacity 0.2s ease-in-out;
-			-webkit-transition: opacity 0.2s ease-in-out;
-			-ms-transition: opacity 0.2s ease-in-out;
-			transition: opacity 0.2s ease-in-out;
-			text-decoration: none;
-			position: absolute;
-			top: .5em;
-			right: .5em;
-			z-index: 11000;
-			-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-			white-space: nowrap;
-			text-indent: 2em;
-			overflow: hidden;
-			width: 2em;
-			height: 2em;
-			display: block;
-		}
-
-			.poptrox-popup .closer:before {
-				content: "\f00d";
-				-moz-osx-font-smoothing: grayscale;
-				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
-				font-style: normal;
-				font-weight: normal;
-				text-transform: none !important;
-				display: block;
-				position: relative;
-				text-indent: 0;
-				border-radius: 100%;
-				box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
-				color: #ffffff !important;
-				width: 2em;
-				height: 2em;
-				line-height: 2em;
-			}
-
-		.poptrox-popup:hover .closer {
-			opacity: 0.5;
-		}
-
-		.poptrox-popup:hover .closer:hover {
-			opacity: 1.0;
-		}
-
-		@media screen and (max-width: 736px) {
-
-			.poptrox-popup {
-				padding: 0;
-			}
-
-				.poptrox-popup .closer {
-					display: none !important;
-				}
-
-		}
-*/
 /* Banner */
 
 	#banner {
@@ -1477,6 +1345,8 @@ height:400px;
 
 /* Footer */
 
+
+
 	#footer {
 		padding: 4em 0 2em 0;
 		background-color: #1b1b1f;
@@ -1515,6 +1385,50 @@ height:400px;
 		@media screen and (max-width: 736px) {
 
 			#footer {
+				padding: 3em 0 1em 0;
+			}
+
+		}
+		/*Footer con gradiente*/
+		#footerGrad {
+			padding: 4em 0 2em 0;
+			background-color: #1b1b1f;
+			background-image: linear-gradient(rgb(139, 134, 134), rgb(10, 10, 10)); /* Standard syntax (must be last) */
+			text-align: center;
+			
+		}
+		#footerGrad .inner {
+			width: 50%;
+			margin: 0 auto;
+		}
+
+			@media screen and (max-width: 980px) {
+
+				#footerGrad .inner {
+					width: 75%;
+				}
+
+			}
+
+			@media screen and (max-width: 480px) {
+
+				#footerGrad .inner {
+					width: 90%;
+				}
+
+			}
+
+		#footerGrad .copyright {
+			color: rgba(255, 255, 255, 0.5);
+			font-size: 0.9em;
+			margin: 0 0 2em 0;
+			padding: 0;
+			text-align: center;
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#footerGrad {
 				padding: 3em 0 1em 0;
 			}
 

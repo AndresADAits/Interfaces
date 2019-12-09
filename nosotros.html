@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="es">
 
 <head>
 
@@ -17,7 +17,8 @@
 			<!--Contiene etiqueta HEADER -->
 			<header>
 				<h1>Trendy</h1>
-				<p translate="yes">Una nueva forma de estar al tanto</p><!--Para que se difunda el lema de la página-->
+				<p translate="yes">Una nueva forma de estar al tanto</p>
+				<!--Para que se difunda el lema de la página-->
 				<a href="#main" class="more">
 					<!--aunque esta vacio se usa para bajar al "main" y que tenga apariencia y un efecto --></a>
 			</header>
@@ -30,46 +31,66 @@
 		<div class="inner">
 			<!--Contiene etiqueta NAV -->
 			<nav>
-
 				<div class="nav">
 					<ul class="navigation">
-						<a href="index.html">Tendencias</a><a href="registro.html">Registro</a> <a
-							href="sorteo.html">Sorteos</a><a
-							href="nosotros.html">Contacto</a>
-
+						<li><a href="index.html">Tendencias</a></li>
+						<li><a href="registro.html">Registro</a></li>
+						<li><a href="sorteo.html">Sorteos</a></li>
+						<li><a href="nosotros.html">Contacto</a></li>
 					</ul>
 				</div>
 			</nav>
 
-			<div class="thumbnails">
-                    
-                            <h3>DONDE ESTAMOS</h3>
-                        </div>
-                        <div class="thumbnails">
-                              
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12676.736949294169!2d-5.9280075!3d37.40912!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6aacb7db2dd738!2sInstituto+Tecnol%C3%B3gico+Superior+ADA!5e0!3m2!1ses!2ses!4v1486657884737" width="600" height="300" frameborder="0" style="border: 0px; pointer-events: none;" allowfullscreen=""></iframe>
-                            </div>
-                            <div class="thumbnails">
-                            <H3>NUESTRA PASI&Oacute;N ES LA M&Uacute;SICA</H3>
-                        </div>
-                            <div class="thumbnails">
-                            <iframe width="600" height="300" src="https://www.youtube.com/embed/2Y6Nne8RvaA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
 
+			<div class="thumbnails">
+
+				<h3>DONDE ESTAMOS</h3>
+			</div>
+			<div class="thumbnails">
+
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12676.736949294169!2d-5.9280075!3d37.40912!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6aacb7db2dd738!2sInstituto+Tecnol%C3%B3gico+Superior+ADA!5e0!3m2!1ses!2ses!4v1486657884737"
+					width="600" height="300" frameborder="0" style="border: 0px; pointer-events: none;"
+					allowfullscreen=""></iframe>
+			</div>
+			<div class="thumbnails">
+				<H3>NUESTRA PASI&Oacute;N ES LA M&Uacute;SICA</H3>
+			</div>
+			<div class="thumbnails">
+				<!--Contiene etiqueta VIDEO -->
+				<video autoplay controls loop width="600" height="300">
+					<source src="images/Kungs vs Cookin’ on 3 Burners - This Girl (Official Music Video).mp4"
+						type="video/mp4">
+
+					Tu navegador no soporta video.
+				</video>
+			</div>
+			<div id="quinto">
+				<h3>Animate a contactar con nosotros!</h3>
 			</div>
 
 		</div>
+
+	</div>
 	</div>
 
-<!--Contiene etiqueta FOOTER -->
-	<footer id="footer">
+	<!--Contiene etiqueta FOOTER -->
+	<!--En este footer se indica en el css que se realice un gradiente -->
+	<footer id="footerGrad">
 		<div class="inner">
 
 			<ul class="icons">
-				<li><a href="https://twitter.com/" target="_blank" class="icon fa-twitter"><span
-							class="label">Twitter</span></a></li>
-				<li><a href="https://www.facebook.com/" target="_blank" class="icon fa-facebook"><span
-							class="label">Facebook</span></a>
+				<li>
+					<div id="rotate3d">
+						<!--Uso este id para luego en CSS hacer una transformacion 3D con RotateY y RotateX--><a
+							href="https://twitter.com/" target="_blank" class="icon fa-twitter"><span
+								class="label">Twitter</span></a></div>
+				</li>
+				<li>
+					<div id="rotateFace">
+						<!--Uso este id para luego en CSS hacer una transformacion 2D con Rotate--><a
+							href="https://www.facebook.com/" target="_blank" class="icon fa-facebook"><span
+								class="label">Facebook</span></a></div>
 				</li>
 				<li><a href="https://www.instagram.com/" target="_blank" class="icon fa-instagram"><span
 							class="label">Instagram</span></a></li>
@@ -78,6 +99,7 @@
 				</li>
 			</ul>
 			<p class="copyright">&copy; Trendy.inc Fake Road 123</p>
+
 		</div>
 	</footer>
 

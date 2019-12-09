@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="es">
 
 <head>
 
@@ -18,7 +18,8 @@
 			<!--Contiene etiqueta HEADER -->
 			<header>
 				<h1>Trendy</h1>
-				<p translate="yes">Sorteos</p><!--Para que se pueda saber en que parte de la web estamos-->
+				<p translate="yes">Sorteos</p>
+				<!--Para que se pueda saber en que parte de la web estamos-->
 				<a href="#main" class="more">
 					<!--aunque esta vacio se usa para bajar al "main" y que tenga apariencia y un efecto --></a>
 			</header>
@@ -31,77 +32,93 @@
 		<div class="inner">
 			<!--Contiene etiqueta NAV -->
 			<nav>
+				<div class="nav">
+					<ul class="navigation">
+						<li><a href="index.html">Tendencias</a></li>
+						<li><a href="registro.html">Registro</a></li>
+						<li><a href="sorteo.html">Sorteos</a></li>
+						<li><a href="nosotros.html">Contacto</a></li>
+					</ul>
+				</div>
+			</nav>
 
-					<div class="nav">
-						<ul class="navigation">
-							<a href="index.html">Tendencias</a><a href="registro.html">Registro</a> <a
-								href="sorteo.html">Sorteos</a><a
-								href="nosotros.html">Contacto</a>
-	
-						</ul>
-					</div>
-				</nav>
 			<aside>
-			<div class="thumbnails">
-			<article> 
-					
-					Disponible en todas las tallas
-					 <figure>
-							
-									<a href="https://www.pullandbear.com/es/hombre/ropa/camiseta-red-hot-chili-peppers-c1010141511p501772036.html?LGWCODE=0924390525002I2019%3B164955%3B6589&colorId=250&gclid=CjwKCAiA27LvBRB0EiwAPc8XWSq8yq_w0DllQBcwcRCSSK9qTwAr5VJztBRTmBC1a9-SYLOiDZ7ISBoC5YYQAvD_BwE&gclsrc=aw.ds"
-									class="image fit" target="_blank"><img src="/images/camis.png" alt="camiseta RHCP" /></a>
-								
-		
-					<figcaption>
-					<h5>Comprala ya, y entra en el sorteo!</h5>
-					</figcaption>
-					</figure>
-					</aside> 
-	
-					<h3>¿Te interesa ir gratis a un concierto de tu grupo favorito? 
-						<mark>
-						 ¿Y llegar a conocerlos? 
-					</mark></h3> 
-					<p>Pues simplemente comprando una camiseta puedes conseguirlo</p>    
-					</article>
-				
+				<div class="thumbnails">
+					<article>
+
+						Disponible en todas las tallas
+						<!--Aqui se realiza una animacion 2D con scale en el CSS-->
+						<figure>
+
+							<a href="https://www.pullandbear.com/es/hombre/ropa/camiseta-red-hot-chili-peppers-c1010141511p501772036.html?LGWCODE=0924390525002I2019%3B164955%3B6589&colorId=250&gclid=CjwKCAiA27LvBRB0EiwAPc8XWSq8yq_w0DllQBcwcRCSSK9qTwAr5VJztBRTmBC1a9-SYLOiDZ7ISBoC5YYQAvD_BwE&gclsrc=aw.ds"
+								class="image fit" target="_blank"><img src="/images/camis.png"
+									alt="camiseta RHCP" /></a>
+
+
+							<figcaption>
+								<h5>Comprala ya, y entra en el sorteo!</h5>
+							</figcaption>
+						</figure>
+			</aside>
+
+			<h3>¿Te interesa ir gratis a un concierto de tu grupo favorito?
+				<mark>
+					¿Y llegar a conocerlos?
+				</mark></h3>
+			<p>Pues simplemente comprando una camiseta puedes conseguirlo</p>
+			</article>
+
 
 
 			<div class="FormSorteoGrid">
-				<form action="support@trendy.com" method="post"autocomplete="on">
-				
+				<form action="support@trendy.com" method="post" autocomplete="on">
+
 					<h3>Introduce tu password de usuario:</h3>
-<label for="Contrasenna"><input type="password" name="pwd" maxlength="8"autocomplete="off" autofocus></label>
-<!-- Aqui impido el autocompletado para que no se use otra contraseña o la de otra persona-->
-<!-- Uso el autofocus para que sepa que hay que tiene que teclear y que comience por el primer lugar-->
-						
-				
+					<label for="Contrasenna"><input type="password" name="pwd" maxlength="8" autocomplete="off"
+							autofocus></label>
+					<!-- Aqui impido el autocompletado para que no se use otra contraseña o la de otra persona-->
+					<!-- Uso el autofocus para que sepa que hay que tiene que teclear y que comience por el primer lugar-->
 
-				<h3>Elige el color de tu camiseta</h3>
-				<label for="Elige el color de tu camiseta"><input type="color" name="colorElegido" value="#ff0000"></label>
-				
 
-				<h3>¿Cuantas entradas vas a necesitar?</h3>
-				
-				<label for="Numero entradas"><input type="range" name="rango"></label>
-				
 
-				<h3>Adjuntar documentacion</h3>
-				<label for="Adjunta documentacion"><input type="file" name="archivo"></label>
-				<h3>¿Alguna peticion especial?</h3>
-				<label for="Peticion especial"><textarea name="texto" rows="4" cols="40" placeholder="Your comment here"></textarea></label>
-				<h3>¿Tienes una p&aacute;gina web?</h3>
-				<label for="Tienes pagina web"><input type="url" name="homepage"></label>
-				
-				
+					<h3>Elige el color de tu camiseta</h3>
+					<label for="Elige el color de tu camiseta"><input type="color" name="colorElegido"
+							value="#ff0000"></label>
 
-				<label for="Boton Enviar"><input type="submit" value="Enviar"></label>
-				<label for="Boton Reset"><input type="reset" value="Reset"></label>
-				
+
+					<h3>¿Cuantas entradas vas a necesitar?</h3>
+
+					<label for="Numero entradas"><input type="range" name="rango"></label>
+
+
+					<h3>Adjuntar documentacion</h3>
+					<label for="Adjunta documentacion"><input type="file" name="archivo"></label>
+					<h3>¿Alguna peticion especial?</h3>
+					<label for="Peticion especial"><textarea name="texto" rows="4" cols="40"
+							placeholder="Your comment here"></textarea></label>
+					<h3>¿Tienes una p&aacute;gina web?</h3>
+					<label for="Tienes pagina web"><input type="url" name="homepage"></label>
+
+
+
+					<label for="Boton Enviar"><input type="submit" value="Enviar"></label>
+					<label for="Boton Reset"><input type="reset" value="Reset"></label>
+
 				</form>
 			</div>
+			<!--Aqui uso una animacion 3D-->
+			<div class="flip-box">
+				<div class="flip-box-inner">
+					<div class="flip-box-front">
+						<h2>No nos digas Adios!</h2>
+					</div>
+					<div class="flip-box-back">
+						<h2>Mejor un hasta luego</h2>
+					</div>
+				</div>
+			</div>
 
-<!--Contiene etiqueta FOOTER -->
+			<!--Contiene etiqueta FOOTER -->
 			<footer id="footer">
 				<div class="inner">
 
