@@ -1,1 +1,2 @@
 En el caso del warning de la página "registro.html". El validador nos advierte de que puede no funcionar en navegadores antiguos y que usemos Polyfill, un fragmento de código (generalmente JavaScript) que se utiliza para proporcionar una funcionalidad moderna en navegadores antiguos que no lo admiten de forma nativa.
+En el caso del warning de la página "sorteo.html". El validador nos advierte de que no todos los navegadores soportan el tipo de imput "color" y que nos planteemos usar Polyfill.

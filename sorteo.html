@@ -59,6 +59,8 @@
 								<h5>Comprala ya, y entra en el sorteo!</h5>
 							</figcaption>
 						</figure>
+					</article>
+				</div>
 			</aside>
 
 			<h3>¿Te interesa ir gratis a un concierto de tu grupo favorito?
@@ -66,7 +68,7 @@
 					¿Y llegar a conocerlos?
 				</mark></h3>
 			<p>Pues simplemente comprando una camiseta puedes conseguirlo</p>
-			</article>
+			
 
 
 
@@ -74,7 +76,7 @@
 				<form action="support@trendy.com" method="post" autocomplete="on">
 
 					<h3>Introduce tu password de usuario:</h3>
-					<label for="Contrasenna"><input type="password" name="pwd" maxlength="8" autocomplete="off"
+					<label for="pwd"><input type="password" name="pwd" maxlength="8" autocomplete="off" id="pwd"
 							autofocus></label>
 					<!-- Aqui impido el autocompletado para que no se use otra contraseña o la de otra persona-->
 					<!-- Uso el autofocus para que sepa que hay que tiene que teclear y que comience por el primer lugar-->
@@ -82,27 +84,27 @@
 
 
 					<h3>Elige el color de tu camiseta</h3>
-					<label for="Elige el color de tu camiseta"><input type="color" name="colorElegido"
-							value="#ff0000"></label>
+					<label for="colorCamista"><input type="color" name="colorElegido"
+							value=#ff0000 id="colorCamista"></label>
 
 
 					<h3>¿Cuantas entradas vas a necesitar?</h3>
 
-					<label for="Numero entradas"><input type="range" name="rango"></label>
+					<label for="rango"><input type="range" name="rango" id="rango"></label>
 
 
 					<h3>Adjuntar documentacion</h3>
-					<label for="Adjunta documentacion"><input type="file" name="archivo"></label>
+					<label for="archivo"><input type="file" name="archivo" id="archivo"></label>
 					<h3>¿Alguna peticion especial?</h3>
-					<label for="Peticion especial"><textarea name="texto" rows="4" cols="40"
-							placeholder="Your comment here"></textarea></label>
+					<label for="Peticion_especial"><textarea name="texto" rows="4" cols="40"
+							placeholder="Escribe tu comentario aqui" id="Peticion_especial"></textarea></label>
 					<h3>¿Tienes una p&aacute;gina web?</h3>
-					<label for="Tienes pagina web"><input type="url" name="homepage"></label>
+					<label for="homepage"><input type="url" name="homepage" id="homepage"></label>
 
 
 
-					<label for="Boton Enviar"><input type="submit" value="Enviar"></label>
-					<label for="Boton Reset"><input type="reset" value="Reset"></label>
+					<label for="Boton_Enviar"><input type="submit" value="Enviar" id="Boton_Enviar"></label>
+					<label for="Boton_Reset"><input type="reset" value="Reset" id="Boton_Reset"></label>
 
 				</form>
 			</div>
@@ -110,14 +112,18 @@
 			<div class="flip-box">
 				<div class="flip-box-inner">
 					<div class="flip-box-front">
+						
 						<h2>No nos digas Adios!</h2>
 					</div>
 					<div class="flip-box-back">
+						
 						<h2>Mejor un hasta luego</h2>
+					
 					</div>
 				</div>
 			</div>
 		</div>
+		
 			<!--Contiene etiqueta FOOTER -->
 			<footer id="footer">
 				<div class="inner">
@@ -139,7 +145,7 @@
 			</footer>
 		
 	</div>
-
+	<details><summary>detalles</summary></details>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
