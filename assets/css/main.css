@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Passion+One:400");
 
 
+
 /* Para etiquetas semanticas*/
 .aside {
 	border-radius: 4px;
@@ -17,7 +18,7 @@
 		margin-bottom: 3px;
 	}
 	.aside  {
-		padding-left: 70%;
+		padding-left: 65%;
 		background-color: #202024;
 	}
 	.aside .image.fit {
@@ -36,9 +37,11 @@
 
 		@media screen and (max-width: 480px) {
 
-			.box .inner {
-				padding: 1em;
-			}
+			.aside .inner {
+				
+				padding-left: 0%;
+				padding-right: 30%;
+			} 	
 
 		}
 
@@ -50,8 +53,8 @@
 	mark {background-color:aqua;}
 	figure {
 	position: sticky;
-	width:220px;
-	height:200px;
+	width:180px;
+	height:160px;
 	/*Transformacion 2D con scale*/
 	-ms-transform: scale(1.2,1.2); /* IE 9 */
     -webkit-transform: scale(1.2,1.2); /* Safari prior 9.0 */
