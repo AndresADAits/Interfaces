@@ -6,7 +6,7 @@
 /* Para etiquetas semanticas*/
 aside { 
 	background-color: rgb(156, 156, 154);
-float: right; 
+float: right;
 width: 300px; 
 margin: 5px; 
 padding: 5px; 
@@ -169,13 +169,15 @@ height:400px;
 	  #selectLetra{color: #ffffff;
 
 	  }
+	  /*Si usasemos esto se veria mejor la opcion del select en la pagina registro, pero entonces daria error en el validador
+	  porque no se le puede dar id a una opcion de un select.
 	  #twitterNegro{
 		  background-color: #42424f;
 		  
 	}
 	  #facebookNegro{ background-color: #42424f;}
 	  #instaNegro{ background-color: #42424f;}
-
+*/
 
 /* Box Model */
 

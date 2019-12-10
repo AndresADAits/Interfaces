@@ -41,7 +41,7 @@
 					</ul>
 				</div>
 			</nav>
-
+	
 
 
 
@@ -51,55 +51,56 @@
 						<h2>Datos del usuario</h2>
 					</div>
 					<div>
-						<label for="Nombre">Nombre<input type="text" name="nombre" size="10" background-color="#a1a1a1"
-								value="nombre" autofocus></label>
+						<label for="nombre">Nombre<input type="text" name="nombre" size="10" value="Nombre" id="nombre"
+								autofocus></label>
 						<!-- Uso el autofocus para que sepa que hay que tiene que teclear y que comience por el primer lugar-->
 
 					</div>
 					<div>
-						<label for="Apellidos">Apellidos<input type="text" name="apellido" size="20"
-								background-color="#a1a1a1" value="tus apellidos"></label>
+						<label for="apellidos">Apellidos<input type="text" name="apellido" size="20"
+								value="tus apellidos" id="apellidos"></label>
 
 					</div>
 
 					<div>
-						<label for="Fecha de nacimiento">Fecha de nacimiento<input type="date" id="cumple"
-								name="cumple required" max="2025-01-01" min="1900-01-01"></label>
+						<label for="cumple">Fecha de nacimiento<input type="date" id="cumple" name="cumple_required"
+								max="2025-01-01" min="1900-01-01"></label>
 
 
 					</div>
 					<div>
-						<label for="Correo Electronico">Correo Electronico<input type="text" name="Correo" size="20"
-								value="" autocomplete="off"></label>
+						<label for="Correo_Electronico">Correo Electronico<input type="text" name="Correo" size="20"
+								value="" autocomplete="off" id="Correo_Electronico"></label>
 						<!-- Aqui impido el autocompletado para que no se use el correo de otra persona-->
 
 					</div>
 					<div>
 
 						<h4>Elige una red social</h4>
-						<label for="red social">
-							<select name="redSocial" form="redSocial">
-								<option id="twitterNegro" value="Twitter" select>Twitter</option>
-								<option id="facebookNegro" value="Facebook">Facebook</option>
-								<option id="instaNegro" value="Instagram">Instagram</option>
+						<label for="red_social">
+							<select name="redSocial"  id="red_social"><!--Si le pusiesemos id  y en el css, le dieramos color, se veria mejor, pero da error al validar el html-->
+								<option  value="Twitter">Twitter</option><!--id="twitterNegro"-->
+								<option  value="Facebook">Facebook</option><!--id="twitterNegro"-->
+								<option  value="Instagram">Instagram</option><!--id="twitterNegro"-->
 							</select>
 						</label>
 					</div>
 					<div>
-						<label for="Numero">Introduce tu número de telefono:<input type="number" id="teleph"
-								value="telefono"></label>
+						<label for="teleph">Introduce tu número de telefono:<input type="number" id="teleph"
+								value=""></label>
 					</div>
 
 
-					<label for="politica de datos"><input class="checkboxMalcolor" id="checkboxMalcolor" type="checkbox"
+					<label for="checkboxMalcolor"><input class="checkboxMalcolor" id="checkboxMalcolor" type="checkbox"
 							name="aceptaPolitica" value="1">¿Acepta la politica de datos?</label>
 
 
 
-					<label for="Enviar"><input type="submit" value="Enviar"></label>
+					<label for="Enviar"><input type="submit" value="Enviar" id="Enviar"></label>
 
 				</form>
 			</div>
+		</div>
 
 			<!--Contiene etiqueta FOOTER -->
 			<footer id="footer">
@@ -120,6 +121,8 @@
 					<p class="copyright">&copy; Trendy.inc Fake Road 123</p>
 				</div>
 			</footer>
+		
+	</div>
 
 
 			<script src="assets/js/jquery.min.js"></script>
